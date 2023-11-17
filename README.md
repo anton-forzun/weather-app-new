@@ -18,12 +18,12 @@ Storage.Стоїть обмеження на додавання більше 5 �
 10. Реалізовано перемикання відображення погоди “День/Ніч”.
 
 # Запити API: 
-   1. Визначення міста -- http://api.openweathermap.org/geo/1.0/direct?q=${this.city}&limit=5&appid=${this.ApiKey}
+   1. Визначення міста -- https://api.openweathermap.org/geo/1.0/direct?q=${this.city}&limit=5&appid=${this.ApiKey}
    2. Отримання погоди по вибраному місту --- https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${this.ApiKey}&units=metric
    3. Отримання міста за ІР -- https://ipinfo.io/json?token=${this.token}\
    4. Погода на день --- https://api.openweathermap.org/data/2.5/weather?q=${this.city.name}&appid=${this.ApiKey}&units=metric
    5. Погода на тиждень --- https://api.openweathermap.org/data/2.5/forecast?q=${this.city.name}&appid=${this.ApiKey}&units=metric
-   6. Отримання іконок погоди http://openweathermap.org/img/wn/${iconCode}.png
+   6. Отримання іконок погоди https://openweathermap.org/img/wn/${iconCode}.png
 
 This template should help get you started developing with Vue 3 in Vite.
 
