@@ -10,7 +10,7 @@ import { RouterLink, RouterView } from "vue-router";
       <button
         class="btn5"
         @click="openFavourites"
-        :disabled="isFavouritesEmpty"
+
       >
         Обране
         <span class="quontity" v-if="select.length > 0">{{
