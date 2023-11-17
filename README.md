@@ -1,6 +1,6 @@
 
 ## Weather App
-demo - 
+demo - https://anton-forzun.github.io/weather-app-new/
 ## Реалізовано
 1. Інпут з автокомплитом містами.
 2. Для запитів використатав axios
