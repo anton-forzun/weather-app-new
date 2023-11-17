@@ -13,9 +13,9 @@ import { RouterLink, RouterView } from "vue-router";
         :disabled="isFavouritesEmpty"
       >
         Обране
-        <!-- <span class="quontity" v-if="!this.select">{{
+        <span class="quontity" v-if="this.select">{{
           this.select.length
-        }}</span> -->
+        }}</span>
       </button>
     </div>
     <CityInput @city-selected="addWeatherBlock" />
@@ -26,7 +26,7 @@ import { RouterLink, RouterView } from "vue-router";
     />
 
     <div v-if="show" class="popup-overlay">
-      <div class="popup">
+      <div v-if="select" class="popup">
         <h2>Обране</h2>
         <button class="remove_btn" @click="closeFav">X</button>
         <div class="container">
