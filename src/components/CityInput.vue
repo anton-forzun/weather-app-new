@@ -56,7 +56,7 @@ export default {
     async searchCities() {
       try {
         const response = await axios.get(
-          `http://api.openweathermap.org/geo/1.0/direct?q=${this.city}&limit=5&appid=${this.ApiKey}`
+          `https://api.openweathermap.org/geo/1.0/direct?q=${this.city}&limit=5&appid=${this.ApiKey}`
         );
         this.results = response.data;
         this.showResults = true;

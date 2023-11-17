@@ -174,7 +174,7 @@ export default {
       this.$emit("add-to-favourites", this.city);
     },
     getWeatherIconUrl(iconCode) {
-      return `http://openweathermap.org/img/wn/${iconCode}.png`;
+      return `https://openweathermap.org/img/wn/${iconCode}.png`;
     },
     removeWeatherCard() {
       this.$emit("remove-card", this.city.id);

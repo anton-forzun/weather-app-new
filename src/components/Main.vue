@@ -196,7 +196,7 @@ export default {
       }
     },
     getWeatherIconUrl(iconCode) {
-      return `http://openweathermap.org/img/wn/${iconCode}.png`;
+      return `https://openweathermap.org/img/wn/${iconCode}.png`;
     },
     saveDataToLocal() {
       localStorage.setItem("selectedCity", JSON.stringify(this.selectedCity));
