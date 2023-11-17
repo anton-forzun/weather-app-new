@@ -13,9 +13,9 @@ import { RouterLink, RouterView } from "vue-router";
         :disabled="isFavouritesEmpty"
       >
         Обране
-        <span class="quontity" v-if="this.select">{{
+        <!-- <span class="quontity" v-if="this.select">{{
           this.select.length
-        }}</span>
+        }}</span> -->
       </button>
     </div>
     <CityInput @city-selected="addWeatherBlock" />
@@ -70,7 +70,7 @@ import { RouterLink, RouterView } from "vue-router";
           </ul>
         </div>
 
-        <h3 v-if="this.select.length === 0">Нажаль нічого не додано...</h3>
+        <h3 v-if="!this.select">Нажаль нічого не додано...</h3>
       </div>
     </div>
 
